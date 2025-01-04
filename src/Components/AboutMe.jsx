@@ -1,32 +1,32 @@
+import SectionHeader from "@/shared/SectionHeader";
 import React from "react";
 
 export default function AboutMe() {
   return (
-    <div className="bg-gray-100 px-6 py-12 text-gray-800 md:px-20">
-      {/* Hero Section */}
-      <div className="mb-8 text-center">
-        <h1 className="mb-4 text-4xl font-bold">About Me</h1>
-        <p className="text-lg text-gray-600">
-          Get to know a little more about me and what I do.
-        </p>
-      </div>
+    <>
+      <div className="px-5 pt-28 md:container md:mx-auto">
+        {/* Hero Section */}
+        <SectionHeader
+          heading={"About Me"}
+          subHeading={"Get to know a little more about me and what I do."}
+        />
 
-      {/* Main Content */}
-      <div className="rounded-lg bg-white p-6 shadow-lg">
-        <h2 className="mb-4 text-2xl font-semibold">Who I Am</h2>
-        <p className="leading-relaxed text-gray-700">
-          I’m a passionate frontend and full-stack developer dedicated to
-          creating engaging and user-friendly web applications. With a strong
-          focus on modern frameworks like React and Next.js, I specialize in
-          building scalable and efficient digital solutions.
-        </p>
-        <p className="mt-4 leading-relaxed text-gray-700">
-          Over the years, I’ve worked on diverse projects, leveraging the MERN
-          stack to deliver high-performance applications. Whether it’s crafting
-          seamless user interfaces or designing full-stack solutions, I’m
-          committed to making every project a success.
-        </p>
+        {/* Main Content */}
+        <div className="rounded-lg p-6 shadow-lg">
+          <h2 className="mb-4 text-2xl font-semibold">Who I Am</h2>
+          <p className="leading-relaxed">
+            Hi, I’m{" "}
+            <span className="font-semibold text-blue-500">
+              Md. Huzaifa Islam
+            </span>
+            , a passionate Frontend Developer based in Chittagong, Bangladesh. I
+            specialize in building interactive, responsive, and user-friendly
+            web applications using modern technologies like React.js, Next.js,
+            and TypeScript. I love solving problems, creating intuitive designs,
+            and learning cutting-edge tools in web development.
+          </p>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
