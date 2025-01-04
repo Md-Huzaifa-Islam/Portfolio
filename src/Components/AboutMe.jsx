@@ -15,7 +15,7 @@ export default function AboutMe() {
         />
 
         {/* Main Content */}
-        <div className="relative bottom-14 flex grid-cols-2 items-center justify-between">
+        <div className="relative bottom-14 grid grid-cols-2 items-center justify-between">
           <div className="max-w-2xl rounded-lg border-2 border-white p-10 shadow-lg shadow-white">
             <h2 className="mb-4 text-2xl font-semibold">Who I Am ? </h2>
             <p className="leading-relaxed">
@@ -32,7 +32,7 @@ export default function AboutMe() {
             </p>
           </div>
           {/* animation side  */}
-          <div className="max-w-xl">
+          <div className="max-w-xl justify-self-end">
             <Animation1 />
             {/* <Animation2 /> */}
             {/* <Animation3 /> */}

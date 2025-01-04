@@ -20,8 +20,9 @@ export default function ContactForm() {
       .then((res) => console.log(res));
   };
   return (
-    <div className="card w-full max-w-sm shrink-0 bg-base-100 shadow-2xl">
-      <form className="card-body" onSubmit={handleSendMessage}>
+    <div className="grid w-full max-w-sm gap-8 rounded-lg border-2 border-white p-10 shadow-lg shadow-white">
+      <p className="text-center text-2xl font-semibold">Send me a message</p>
+      <form className="grid gap-4" onSubmit={handleSendMessage}>
         <div className="form-control">
           <label className="label">
             <span className="label-text">Name</span>
@@ -59,7 +60,7 @@ export default function ContactForm() {
           ></textarea>
         </div>
         <div className="form-control mt-6">
-          <button className="btn btn-primary">Login</button>
+          <button className="btn btn-primary">Send</button>
         </div>
       </form>
     </div>

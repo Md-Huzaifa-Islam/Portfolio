@@ -31,13 +31,13 @@ export default function SkillContainer() {
     { name: "Git", icon: <FaGitAlt className="text-orange-600" /> },
   ];
   return (
-    <div className="px-5 pt-28 md:container md:mx-auto">
+    <div className="px-5 md:container md:mx-auto">
       <SectionHeader
         heading={"My Skills"}
         subHeading={"Technologies and tools I work with."}
       />
 
-      <div className="grid grid-cols-2 justify-items-center gap-12 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
+      <div className="flex flex-wrap items-center justify-center gap-32 gap-y-28 pt-20">
         {skills.map((skill, index) => (
           <Skill key={index} skill={skill} />
         ))}
