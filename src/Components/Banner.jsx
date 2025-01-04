@@ -5,7 +5,7 @@ import React from "react";
 import { FaFacebook, FaLinkedin, FaGithub } from "react-icons/fa";
 export default function Banner() {
   return (
-    <div className="grid grid-cols-2 items-center justify-between gap-20 px-5 md:container md:mx-auto">
+    <div className="grid grid-cols-2 items-center justify-between gap-20 px-5 pt-24 md:container md:mx-auto">
       {/* text part  */}
       <div className="w-10/12">
         <p className="text-5xl/snug font-semibold">
