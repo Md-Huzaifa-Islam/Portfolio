@@ -1,6 +1,7 @@
 import BannerBorder from "@/client/BannerBorder";
 import TextChanger from "@/client/TextChanger";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { FaFacebook, FaLinkedin, FaGithub } from "react-icons/fa";
 export default function Banner() {
@@ -8,9 +9,11 @@ export default function Banner() {
     <div className="grid grid-cols-2 items-center justify-between gap-20 px-5 pt-24 md:container md:mx-auto">
       {/* text part  */}
       <div className="w-10/12">
-        <p className="text-5xl/snug font-semibold">
+        <p className="text-4xl/snug font-semibold">
           Hello, I am <br />
-          <TextChanger />
+          <span className="text-btnColor-0 text-5xl/snug">
+            <TextChanger />
+          </span>
         </p>
 
         <p className="mb-6 mt-4">
@@ -18,15 +21,23 @@ export default function Banner() {
           utilizing the MERN stack and the latest frontend technologies.
         </p>
         <div className="flex max-w-xs items-center justify-between">
-          <button className="btn btn-ghost">Download Resume</button>
-          <ul className="flex items-center gap-5 text-3xl">
-            <li>
+          <Link
+            target="_blank"
+            href={
+              "https://docs.google.com/document/d/1Iqb59QkhLh6iaYoGPNEUeADYKo1pPLcGryaupCzZGh0/edit?tab=t.0"
+            }
+            className="bg-btnColor-0 hover:bg-huzaifa-0 hover:text-mainTheme-0 btn text-base font-medium text-white"
+          >
+            Download Resume
+          </Link>
+          <ul className="flex items-center gap-4 text-3xl">
+            <li className="text-btnColor-0 hover:text-huzaifa-0">
               <FaLinkedin />
             </li>
-            <li>
+            <li className="text-btnColor-0 hover:text-huzaifa-0">
               <FaGithub />
             </li>
-            <li>
+            <li className="text-btnColor-0 hover:text-huzaifa-0">
               <FaFacebook />
             </li>
           </ul>

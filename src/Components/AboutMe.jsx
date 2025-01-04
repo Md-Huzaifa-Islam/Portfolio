@@ -1,7 +1,9 @@
+import AboutSlider from "@/client/AboutSlider";
 import Animation1 from "@/client/Animation1";
 import Animation2 from "@/client/Animation2";
 import Animation3 from "@/client/Animation3";
 import SectionHeader from "@/shared/SectionHeader";
+import Link from "next/link";
 import React from "react";
 
 export default function AboutMe() {
@@ -16,13 +18,21 @@ export default function AboutMe() {
 
         {/* Main Content */}
         <div className="relative bottom-14 grid grid-cols-2 items-center justify-between">
-          <div className="max-w-2xl rounded-lg border-2 border-white p-10 shadow-lg shadow-white">
-            <h2 className="mb-4 text-2xl font-semibold">Who I Am ? </h2>
+          <div className="shadow-btnColor-0 max-w-2xl rounded-lg border-2 border-white p-10 shadow-lg">
+            <h2 className="text-btnColor-0 mb-4 text-2xl font-semibold">
+              Who I Am ?{" "}
+            </h2>
             <p className="leading-relaxed">
               Hi, I’m{" "}
-              <span className="font-semibold text-blue-500">
+              <Link
+                target="_blank"
+                href={
+                  "https://docs.google.com/document/d/1Iqb59QkhLh6iaYoGPNEUeADYKo1pPLcGryaupCzZGh0/edit?tab=t.0"
+                }
+                className="text-btnColor-0 font-semibold"
+              >
                 Md. Huzaifa Islam
-              </span>
+              </Link>
               , a passionate Frontend Developer based in Chittagong, Bangladesh.
               I specialize in building interactive, responsive, and
               user-friendly web applications using modern technologies like
@@ -33,9 +43,7 @@ export default function AboutMe() {
           </div>
           {/* animation side  */}
           <div className="max-w-xl justify-self-end">
-            <Animation1 />
-            {/* <Animation2 /> */}
-            {/* <Animation3 /> */}
+            <AboutSlider />
           </div>
         </div>
       </div>

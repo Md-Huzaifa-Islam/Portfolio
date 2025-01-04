@@ -20,8 +20,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="scroll-smooth">
-      <body className={`${geistSans.variable} ${geistMono.variable} `}>
+    <html lang="en" className="scroll-smooth" data-theme="dark">
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} text-textColor-0`}
+      >
         {/* <ParticleBackground /> */}
         <div>
           <Navbar />

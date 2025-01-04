@@ -25,7 +25,7 @@ export default function Navbar() {
     </>
   );
   return (
-    <div className="navbar sticky top-0 z-50 bg-white bg-opacity-50 px-5 py-3 md:container md:mx-auto">
+    <div className="bg-mainTheme-0 navbar sticky top-0 z-50 bg-opacity-50 px-5 py-3 md:container md:mx-auto">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -62,7 +62,7 @@ export default function Navbar() {
           href={
             "https://docs.google.com/document/d/1Iqb59QkhLh6iaYoGPNEUeADYKo1pPLcGryaupCzZGh0/edit?tab=t.0"
           }
-          className="btn"
+          className="bg-btnColor-0 hover:bg-huzaifa-0 hover:text-mainTheme-0 btn text-base font-medium text-white"
         >
           Download Resume
         </Link>

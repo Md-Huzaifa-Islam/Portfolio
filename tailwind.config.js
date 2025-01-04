@@ -10,7 +10,14 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        textColor: ["#DDF2FD"],
+        mainTheme: ["#164863"],
+        btnColor: ["#427D9D"],
+        huzaifa: ["#9BBEC8"],
+      },
+    },
   },
   plugins: [daisyui],
 };

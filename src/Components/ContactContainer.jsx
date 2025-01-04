@@ -10,12 +10,14 @@ export default function ContactContainer() {
         heading={"Contact Me"}
         subHeading={"Feel free to send me a message!"}
       />
-
+      {/* 
       <div className="flex flex-col items-center justify-center gap-28 lg:flex-row">
-        {/* Left Box: Message Form */}
+       
+        
+      </div> */}
+      <div className="flex w-full flex-col items-start justify-center gap-28 lg:flex-row">
         <ContactForm />
-
-        {/* Right Box: Contact Details */}
+        <div className="divider lg:divider-horizontal">OR</div>
         <ContactInfo />
       </div>
     </div>

@@ -5,11 +5,11 @@ import { FaLocationDot } from "react-icons/fa6";
 import Link from "next/link";
 export default function ContactInfo() {
   return (
-    <div className="rounded-lg border-2 border-white p-10 shadow-lg shadow-white">
+    <div className="shadow-btnColor-0 rounded-lg border-2 border-white p-10 pb-20 shadow-lg">
       {/* contact info  */}
       <div>
         {/* head  */}
-        <p className="pb-6 text-center text-2xl font-medium">Contact Info</p>
+        <p className="pb-14 text-center text-2xl font-medium">Contact Info</p>
         <ul className="flex flex-col gap-5">
           <li>
             <Link
@@ -46,7 +46,7 @@ export default function ContactInfo() {
       {/* social info  */}
       <div>
         {/* head  */}
-        <p className="mt-10 pb-6 text-center text-2xl font-medium">
+        <p className="mt-20 pb-6 text-center text-2xl font-medium">
           Social Links
         </p>
         <ul className="flex items-center justify-center gap-5 text-3xl">

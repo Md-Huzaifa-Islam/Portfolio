@@ -14,16 +14,16 @@ export default function EducationContainer() {
         <div className="max-w-xl justify-self-start">
           <EducationAnimation />
         </div>
-        <div className="max-w-2xl rounded-lg border-2 border-white p-10 shadow-lg shadow-white">
-          <h2 className="text-2xl font-semibold">
+        <div className="shadow-btnColor-0 max-w-2xl rounded-lg border-2 border-white p-10 shadow-lg">
+          <h2 className="text-btnColor-0 mb-2 text-3xl font-semibold">
             Bachelor's in Computer Science
           </h2>
-          <p className="font-medium text-gray-700">
+          <p className="text-lg font-medium">
             Chittagong University of Engineering and Technology (CUET)
           </p>
-          <p className="text-gray-600">2019 - Present</p>
+          <p className="">2022 - Present</p>
 
-          <p className="mt-2 text-gray-700">
+          <p className="mt-2 opacity-70">
             Currently pursuing a Bachelor's degree in Computer Science, with a
             focus on software development, data structures, and modern
             technologies. I am in my final year, actively working on projects
