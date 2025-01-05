@@ -10,12 +10,12 @@ export default function EducationContainer() {
         subHeading={"My Undergraduate Journey at CUET"}
       />
 
-      <div className="relative bottom-10 grid grid-cols-2 items-center justify-between">
-        <div className="max-w-xl justify-self-start">
+      <div className="relative flex flex-col items-center justify-between gap-5 sm:grid sm:grid-cols-[1fr_2fr] lg:bottom-10 lg:grid-cols-2">
+        <div className="max-w-xs justify-self-start lg:max-w-lg xl:max-w-xl">
           <EducationAnimation />
         </div>
-        <div className="shadow-btnColor-0 max-w-2xl rounded-lg border-2 border-white p-10 shadow-lg">
-          <h2 className="text-btnColor-0 mb-2 text-3xl font-semibold">
+        <div className="max-w-2xl rounded-lg border-2 border-white p-10 shadow-lg shadow-btnColor-0">
+          <h2 className="mb-2 text-3xl font-semibold text-btnColor-0">
             Bachelor's in Computer Science
           </h2>
           <p className="text-lg font-medium">

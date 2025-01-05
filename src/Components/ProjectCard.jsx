@@ -3,7 +3,7 @@ import React from "react";
 
 export default function ProjectCard() {
   return (
-    <div className="max-w-md rounded-2xl border border-gray-300 p-6 shadow-lg">
+    <div className="max-w-md rounded-2xl border border-gray-300 p-6 shadow-lg lg:max-w-lg">
       {/* Image and Link Section */}
       <div className="relative aspect-[50/35] w-full overflow-hidden rounded-xl">
         <img
@@ -44,13 +44,13 @@ export default function ProjectCard() {
         <div className="flex flex-col gap-2">
           <p className="text-lg font-medium">Used Technology:</p>
           <ul className="flex flex-wrap gap-3">
-            <li className="bg-mainTheme-0 rounded-full px-3 py-1 text-sm font-medium text-white">
+            <li className="rounded-full bg-mainTheme-0 px-3 py-1 text-sm font-medium text-white">
               React
             </li>
-            <li className="bg-mainTheme-0 rounded-full px-3 py-1 text-sm font-medium text-white">
+            <li className="rounded-full bg-mainTheme-0 px-3 py-1 text-sm font-medium text-white">
               TailwindCSS
             </li>
-            <li className="bg-mainTheme-0 rounded-full px-3 py-1 text-sm font-medium text-white">
+            <li className="rounded-full bg-mainTheme-0 px-3 py-1 text-sm font-medium text-white">
               Node.js
             </li>
           </ul>
@@ -59,7 +59,7 @@ export default function ProjectCard() {
         {/* Show Details Button */}
         <Link
           href="/"
-          className="text-btnColor-0 mt-5 block text-center text-base font-medium hover:underline"
+          className="mt-5 block text-center text-base font-medium text-btnColor-0 hover:underline"
         >
           Show Details
         </Link>

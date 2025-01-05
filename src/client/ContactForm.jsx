@@ -20,7 +20,7 @@ export default function ContactForm() {
       .then((res) => console.log(res));
   };
   return (
-    <div className="shadow-btnColor-0 grid w-full max-w-sm gap-8 rounded-lg border-2 border-white p-10 shadow-lg">
+    <div className="mx-auto grid w-full gap-8 rounded-lg border-2 border-white p-10 shadow-lg shadow-btnColor-0 sm:max-w-md md:max-w-lg lg:mx-0 lg:max-w-sm">
       <p className="text-center text-2xl font-semibold">Send me a message</p>
       <form className="grid gap-4" onSubmit={handleSendMessage}>
         <div className="form-control">
@@ -60,7 +60,7 @@ export default function ContactForm() {
           ></textarea>
         </div>
         <div className="form-control mt-6">
-          <button className="bg-btnColor-0 hover:bg-huzaifa-0 hover:text-mainTheme-0 btn text-base font-medium text-white">
+          <button className="btn bg-btnColor-0 text-base font-medium text-white hover:bg-huzaifa-0 hover:text-mainTheme-0">
             Send
           </button>
         </div>

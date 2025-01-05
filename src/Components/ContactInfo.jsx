@@ -5,7 +5,7 @@ import { FaLocationDot } from "react-icons/fa6";
 import Link from "next/link";
 export default function ContactInfo() {
   return (
-    <div className="shadow-btnColor-0 rounded-lg border-2 border-white p-10 pb-20 shadow-lg">
+    <div className="mx-auto rounded-lg border-2 border-white p-10 pb-20 shadow-lg shadow-btnColor-0 lg:mx-0">
       {/* contact info  */}
       <div>
         {/* head  */}

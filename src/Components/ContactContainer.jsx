@@ -15,7 +15,7 @@ export default function ContactContainer() {
        
         
       </div> */}
-      <div className="flex w-full flex-col items-start justify-center gap-28 lg:flex-row">
+      <div className="flex w-full flex-col items-start justify-center gap-28 sm:gap-8 md:gap-12 lg:flex-row lg:gap-20">
         <ContactForm />
         <div className="divider lg:divider-horizontal">OR</div>
         <ContactInfo />

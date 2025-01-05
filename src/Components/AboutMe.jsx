@@ -17,9 +17,9 @@ export default function AboutMe() {
         />
 
         {/* Main Content */}
-        <div className="relative bottom-14 grid grid-cols-2 items-center justify-between">
-          <div className="shadow-btnColor-0 max-w-2xl rounded-lg border-2 border-white p-10 shadow-lg">
-            <h2 className="text-btnColor-0 mb-4 text-2xl font-semibold">
+        <div className="relative flex flex-col-reverse items-center justify-between gap-10 lg:bottom-0 lg:grid lg:grid-cols-2 lg:gap-0 xl:bottom-14">
+          <div className="max-w-2xl rounded-lg border-2 border-white p-10 shadow-lg shadow-btnColor-0">
+            <h2 className="mb-4 text-2xl font-semibold text-btnColor-0">
               Who I Am ?{" "}
             </h2>
             <p className="leading-relaxed">
@@ -29,7 +29,7 @@ export default function AboutMe() {
                 href={
                   "https://docs.google.com/document/d/1Iqb59QkhLh6iaYoGPNEUeADYKo1pPLcGryaupCzZGh0/edit?tab=t.0"
                 }
-                className="text-btnColor-0 font-semibold"
+                className="font-semibold text-btnColor-0"
               >
                 Md. Huzaifa Islam
               </Link>
@@ -42,7 +42,7 @@ export default function AboutMe() {
             </p>
           </div>
           {/* animation side  */}
-          <div className="max-w-xl justify-self-end">
+          <div className="hidden max-w-xl justify-self-end lg:flex lg:max-w-md">
             <AboutSlider />
           </div>
         </div>

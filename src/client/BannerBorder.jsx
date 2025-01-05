@@ -11,7 +11,7 @@ export default function BannerBorder() {
     ></motion.div>
      */}
       <motion.div
-        className="from-mainTheme-0 via-btnColor-0 to-textColor-0 absolute inset-0 rounded-full bg-gradient-to-r"
+        className="absolute inset-0 rounded-full bg-gradient-to-r from-mainTheme-0 via-btnColor-0 to-textColor-0"
         animate={{
           rotate: 360, // Rotate continuously
         }}
