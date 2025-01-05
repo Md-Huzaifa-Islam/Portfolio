@@ -18,7 +18,7 @@ import {
   Navigation,
 } from "swiper/modules";
 import ProjectCard from "./ProjectCard";
-export default function ProjectSlider() {
+export default function ProjectSlider({ data }) {
   return (
     <>
       <div className="hidden lg:block">
@@ -46,19 +46,11 @@ export default function ProjectSlider() {
           modules={[EffectCoverflow, Pagination, Autoplay]}
           className="mySwiper"
         >
-          <SwiperSlide>
-            <ProjectCard />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ProjectCard />
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <ProjectCard />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ProjectCard />
-          </SwiperSlide>
+          {data.map((p, index) => (
+            <SwiperSlide key={index}>
+              <ProjectCard data={p} />
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
 
@@ -87,19 +79,11 @@ export default function ProjectSlider() {
           modules={[EffectCoverflow, Pagination, Autoplay]}
           className="mySwiper"
         >
-          <SwiperSlide>
-            <ProjectCard />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ProjectCard />
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <ProjectCard />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ProjectCard />
-          </SwiperSlide>
+          {data.map((p, index) => (
+            <SwiperSlide key={index}>
+              <ProjectCard data={p} />
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
       <div className="md:hidden">
@@ -119,18 +103,11 @@ export default function ProjectSlider() {
           modules={[Pagination, Autoplay]}
           className="mySwiper"
         >
-          <SwiperSlide className="w-full max-w-sm">
-            <ProjectCard />
-          </SwiperSlide>
-          <SwiperSlide className="w-full max-w-sm">
-            <ProjectCard />
-          </SwiperSlide>
-          <SwiperSlide className="w-full max-w-sm">
-            <ProjectCard />
-          </SwiperSlide>
-          <SwiperSlide className="w-full max-w-sm">
-            <ProjectCard />
-          </SwiperSlide>
+          {data.map((p, index) => (
+            <SwiperSlide key={index} className="w-full max-w-sm">
+              <ProjectCard data={p} />
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
     </>

@@ -1,8 +1,20 @@
 import SectionHeader from "@/shared/SectionHeader";
 import React from "react";
 import ProjectSlider from "./ProjectSlider";
+import axios from "axios";
+import Loading from "./Loading";
+const fetchData = async () => {
+  try {
+    const response = await axios.get("http://localhost:5000/projects");
+    return response.data;
+  } catch (error) {
+    console.error("Error fetching data:", error);
+    return null;
+  }
+};
+export default async function ProjectsContainer() {
+  const data = await fetchData();
 
-export default function ProjectsContainer() {
   return (
     <div className="px-5 pt-28 md:container md:mx-auto">
       <SectionHeader
@@ -11,7 +23,7 @@ export default function ProjectsContainer() {
       />
 
       <div className="pt-10">
-        <ProjectSlider />
+        {data ? <ProjectSlider data={data} /> : <Loading />}
       </div>
     </div>
   );

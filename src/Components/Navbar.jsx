@@ -2,10 +2,11 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function Navbar() {
+  // console.log(route);
   const links = (
     <>
       <li>
-        <Link href={"#home"}>Home</Link>
+        <Link href={"/"}>Home</Link>
       </li>
       <li>
         <Link href={"#about"}>About Me</Link>
