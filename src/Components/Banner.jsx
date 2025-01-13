@@ -23,8 +23,9 @@ export default function Banner() {
         <div className="flex max-w-xs items-center justify-between">
           <Link
             target="_blank"
+            download={true}
             href={
-              "https://docs.google.com/document/d/1Iqb59QkhLh6iaYoGPNEUeADYKo1pPLcGryaupCzZGh0/edit?tab=t.0"
+              "https://docs.google.com/document/d/1Iqb59QkhLh6iaYoGPNEUeADYKo1pPLcGryaupCzZGh0/export?format=docx"
             }
             className="btn bg-btnColor-0 text-base font-medium text-white hover:bg-huzaifa-0 hover:text-mainTheme-0"
           >
@@ -32,13 +33,25 @@ export default function Banner() {
           </Link>
           <ul className="flex items-center gap-4 text-3xl">
             <li className="text-btnColor-0 hover:text-huzaifa-0">
-              <FaLinkedin />
+              <Link
+                href={"https://www.linkedin.com/in/huzaifaislam/"}
+                target="_blank"
+              >
+                <FaLinkedin />
+              </Link>
             </li>
             <li className="text-btnColor-0 hover:text-huzaifa-0">
-              <FaGithub />
+              <Link href={"https://github.com/Md-Huzaifa-Islam"} target="blank">
+                <FaGithub />
+              </Link>
             </li>
             <li className="text-btnColor-0 hover:text-huzaifa-0">
-              <FaFacebook />
+              <Link
+                href={"https://www.facebook.com/Huzaifaislamrokib"}
+                target="_blank"
+              >
+                <FaFacebook />
+              </Link>
             </li>
           </ul>
         </div>

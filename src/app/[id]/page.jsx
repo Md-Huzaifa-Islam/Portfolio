@@ -10,7 +10,7 @@ export default function page() {
   const [data, setData] = useState(null);
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/projects/${id}`)
+      .get(`https://portfolio-server-gamma-gules.vercel.app/projects/${id}`)
       .then((res) => setData(res.data));
   }, []);
 

@@ -57,7 +57,7 @@ export default function ProjectCard({ data }) {
         {/* Show Details Button */}
         <Link
           href={`/${_id}`}
-          className="mt-5 block text-center text-base font-medium text-btnColor-0 hover:underline"
+          className="mx-auto block h-auto w-max rounded-lg bg-btnColor-0 px-5 py-3 text-base font-medium text-white hover:bg-huzaifa-0 hover:text-mainTheme-0"
         >
           Show Details
         </Link>

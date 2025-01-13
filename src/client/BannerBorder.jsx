@@ -11,13 +11,13 @@ export default function BannerBorder() {
     ></motion.div>
      */}
       <motion.div
-        className="absolute inset-0 rounded-full bg-gradient-to-r from-mainTheme-0 via-btnColor-0 to-textColor-0"
+        className="absolute inset-0 rounded-full bg-gradient-to-r from-teal-400 via-blue-500 to-cyan-600"
         animate={{
           rotate: 360, // Rotate continuously
         }}
         transition={{
           repeat: Infinity, // Repeat animation indefinitely
-          duration: 5, // Duration for a full rotation
+          duration: 2, // Duration for a full rotation
           ease: "linear", // Smooth linear rotation
         }}
       />

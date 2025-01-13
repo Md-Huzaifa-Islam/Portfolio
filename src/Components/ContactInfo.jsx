@@ -13,7 +13,7 @@ export default function ContactInfo() {
         <ul className="flex flex-col gap-5">
           <li>
             <Link
-              className="flex items-center gap-3"
+              className="flex items-center gap-3 text-btnColor-0 hover:text-huzaifa-0"
               href={`mailto:huzaifaislamrakib@gmail.com`}
             >
               <MdEmail size={25} />
@@ -23,7 +23,7 @@ export default function ContactInfo() {
           </li>
           <li>
             <Link
-              className="flex items-center gap-3"
+              className="flex items-center gap-3 text-btnColor-0 hover:text-huzaifa-0"
               href={`tel:+8801915131099`}
             >
               <FaPhoneAlt size={25} />
@@ -32,7 +32,7 @@ export default function ContactInfo() {
           </li>
           <li>
             <Link
-              className="flex items-center gap-3"
+              className="flex items-center gap-3 text-btnColor-0 hover:text-huzaifa-0"
               href="https://maps.app.goo.gl/Uem61dQwP9PmfdYs8"
               target="_blank"
             >
@@ -50,14 +50,26 @@ export default function ContactInfo() {
           Social Links
         </p>
         <ul className="flex items-center justify-center gap-5 text-3xl">
-          <li>
-            <FaLinkedin />
+          <li className="text-btnColor-0 hover:text-huzaifa-0">
+            <Link
+              href={"https://www.linkedin.com/in/huzaifaislam/"}
+              target="_blank"
+            >
+              <FaLinkedin />
+            </Link>
           </li>
-          <li>
-            <FaGithub />
+          <li className="text-btnColor-0 hover:text-huzaifa-0">
+            <Link href={"https://github.com/Md-Huzaifa-Islam"} target="_blank">
+              <FaGithub />
+            </Link>
           </li>
-          <li>
-            <FaFacebook />
+          <li className="text-btnColor-0 hover:text-huzaifa-0">
+            <Link
+              href={"https://www.facebook.com/Huzaifaislamrokib"}
+              target="_blank"
+            >
+              <FaFacebook />
+            </Link>
           </li>
         </ul>
       </div>

@@ -1,6 +1,7 @@
 "use client";
 import axios from "axios";
 import React from "react";
+import { toast } from "react-toastify";
 
 export default function ContactForm() {
   const handleSendMessage = (e) => {
@@ -10,14 +11,16 @@ export default function ContactForm() {
 
     // Convert FormData to a plain object
     const formObject = Object.fromEntries(formData.entries());
-
     axios
-      .post("http://localhost:5000/sendemail", formObject, {
-        headers: {
-          "Content-Type": "application/json",
-        },
+      .post(
+        "https://portfolio-server-gamma-gules.vercel.app/sendemail",
+        formObject,
+      )
+      .then((res) => {
+        toast.success("You email is sent");
+        e.target.reset();
       })
-      .then((res) => console.log(res));
+      .catch((err) => toast.error(err));
   };
   return (
     <div className="mx-auto grid w-full gap-8 rounded-lg border-2 border-white p-10 shadow-lg shadow-btnColor-0 sm:max-w-md md:max-w-lg lg:mx-0 lg:max-w-sm">

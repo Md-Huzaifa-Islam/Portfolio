@@ -1,4 +1,7 @@
+import Image from "next/image";
+import Link from "next/link";
 import React from "react";
+import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -6,35 +9,34 @@ export default function Footer() {
       <div className="container mx-auto flex flex-col items-center justify-between px-6 lg:flex-row">
         {/* Left Section: Logo or Name */}
         <div className="mb-4 text-center lg:mb-0 lg:text-left">
-          <h2 className="text-3xl font-semibold">Huzaifa</h2>
-          <p className="text-gray-400">Frontend & Full Stack Developer</p>
+          <Image src={"/icon.png"} width={30} height={20} alt="logo"></Image>
+          <p className="text-gray-400">Full Stack Developer</p>
         </div>
 
         {/* Center Section: Links */}
-        <div className="mb-4 flex justify-center space-x-6 lg:mb-0">
-          <a
-            href="https://www.linkedin.com/in/huzaifa"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-400 hover:text-white"
-          >
-            LinkedIn
-          </a>
-          <a
-            href="https://github.com/yourusername"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-400 hover:text-white"
-          >
-            GitHub
-          </a>
-          <a
-            href="mailto:huzaifa.email@example.com"
-            className="text-gray-400 hover:text-white"
-          >
-            Email
-          </a>
-        </div>
+        <ul className="flex items-center gap-4 text-3xl">
+          <li className="text-btnColor-0 hover:text-huzaifa-0">
+            <Link
+              href={"https://www.linkedin.com/in/huzaifaislam/"}
+              target="_blank"
+            >
+              <FaLinkedin />
+            </Link>
+          </li>
+          <li className="text-btnColor-0 hover:text-huzaifa-0">
+            <Link href={"https://github.com/Md-Huzaifa-Islam"} target="blank">
+              <FaGithub />
+            </Link>
+          </li>
+          <li className="text-btnColor-0 hover:text-huzaifa-0">
+            <Link
+              href={"https://www.facebook.com/Huzaifaislamrokib"}
+              target="_blank"
+            >
+              <FaFacebook />
+            </Link>
+          </li>
+        </ul>
 
         {/* Right Section: Copyright */}
         <div className="text-center lg:text-right">

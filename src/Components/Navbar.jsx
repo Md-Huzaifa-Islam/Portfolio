@@ -61,8 +61,9 @@ export default function Navbar() {
         <div className="navbar-end">
           <Link
             target="_blank"
+            download={true}
             href={
-              "https://docs.google.com/document/d/1Iqb59QkhLh6iaYoGPNEUeADYKo1pPLcGryaupCzZGh0/edit?tab=t.0"
+              "https://docs.google.com/document/d/1Iqb59QkhLh6iaYoGPNEUeADYKo1pPLcGryaupCzZGh0/export?format=docx"
             }
             className="btn bg-btnColor-0 text-base font-medium text-white hover:bg-huzaifa-0 hover:text-mainTheme-0"
           >

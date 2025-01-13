@@ -1,3 +1,4 @@
+import { App } from "@/client/Background";
 import AboutMe from "@/Components/AboutMe";
 import Banner from "@/Components/Banner";
 import ContactContainer from "@/Components/ContactContainer";
@@ -9,7 +10,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-      <section id="home">
+      <section id="home" className="">
         <Banner />
       </section>
       <section id="about">

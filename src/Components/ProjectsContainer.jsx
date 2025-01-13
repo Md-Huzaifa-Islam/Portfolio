@@ -5,7 +5,9 @@ import axios from "axios";
 import Loading from "./Loading";
 const fetchData = async () => {
   try {
-    const response = await axios.get("http://localhost:5000/projects");
+    const response = await axios.get(
+      "https://portfolio-server-gamma-gules.vercel.app/projects",
+    );
     return response.data;
   } catch (error) {
     console.error("Error fetching data:", error);
